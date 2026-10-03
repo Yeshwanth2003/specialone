@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  height: max-content;
+  width: 100dvw;
+  overflow-y: hidden;
+  overflow: hidden;
+}
+
+#main-container {
+  height: 100dvh;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+  transition: transform 0.7s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.main-container-1 {
+  transform: translateX(-100dvw);
+}
+
+.main-container-2 {
+  transform: translateX(-200dvw);
+}
+
+.main-container-3 {
+  transform: translateX(-300dvw);
+}
+
+.main-container-4 {
+  transform: translateX(-400dvw);
+}
+
+/* Main title */
+.hero-title {
+  font-family: "Georgia", serif;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+/* Romantic / handwritten text */
+.script-text {
+  font-family: "Brush Script MT", "Segoe Script", cursive;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+/* Section headings */
+.section-title {
+  font-family: "Georgia", serif;
+  font-size: 2.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* Normal text */
+.body-text {
+  font-family: "Georgia", serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Buttons / navigation */
+.ui-text {
+  font-family: Arial, sans-serif;
+}
+
+button {
+  border: none;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  background: none;
+}
+
+#bttn-holder {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding: 20px;
+}
+
+#next-btn {
+  width: 40px;
+  height: 40px;
+
+  border: 1px solid rgba(255, 140, 190, 0.5);
+  border-radius: 50%;
+
+  background: rgba(20, 15, 35, 0.65);
+
+  color: #ff9bc5;
+
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  cursor: pointer;
+
+  -webkit-tap-highlight-color: transparent;
+
+  box-shadow:
+    0 0 8px rgba(255, 100, 180, 0.45);
+
+  transition: all 0.25s ease;
+}
+
+#next-btn:hover {
+  transform: translateX(3px);
+  box-shadow:
+    0 0 15px rgba(255, 100, 180, 0.75);
+}
+
+#next-btn:active,
+#next-btn:focus {
+  outline: none;
+}

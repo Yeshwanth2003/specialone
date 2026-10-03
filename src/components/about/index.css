@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap');
+
+#about-main {
+    height: 100%;
+    width: 100dvw;
+    background-image: url('/bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.about-page {
+    width: 100%;
+    min-height: 90dvh;
+
+    position: relative;
+    overflow: hidden;
+
+    padding: 55px 16px 35px;
+
+    box-sizing: border-box;
+
+    color: #ffe8f3;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+
+/* --------------------------------
+   HEADER
+-------------------------------- */
+
+.about-header {
+    text-align: center;
+    position: relative;
+}
+
+
+.about-header h1 {
+    margin: 0;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: clamp(30px, 9vw, 42px);
+
+    font-weight: 500;
+
+    line-height: 1.1;
+
+    color: #ffeaf4;
+
+    text-shadow:
+        0 0 5px rgba(255, 180, 215, 0.7),
+        0 0 15px rgba(255, 100, 180, 0.3);
+}
+
+.about-header h1 span {
+    font-family: Georgia, serif;
+
+    color: #f47cae;
+
+    font-size: 0.9em;
+
+    text-shadow:
+        0 0 8px rgba(255, 100, 170, 0.8);
+}
+
+
+.about-header p {
+    margin: 10px 0 0;
+
+    font-size: 22px;
+
+    line-height: 1.15;
+
+    color: #d9ccd6;
+
+    text-shadow: 0 1px 3px #000;
+}
+
+
+/* --------------------------------
+   CARDS
+-------------------------------- */
+
+.about-cards {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px 15px;
+
+    margin-top: 42px;
+}
+
+
+.about-card {
+    min-height: 175px;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 15px 8px;
+
+    box-sizing: border-box;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(25, 25, 48, 0.95),
+            rgba(11, 19, 37, 0.95)
+        );
+
+    border: 1px solid rgba(238, 119, 170, 0.25);
+
+    box-shadow:
+        inset 0 0 20px rgba(255, 80, 160, 0.03),
+        0 4px 15px rgba(0, 0, 0, 0.25);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.about-card.pink-card {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(65, 28, 61, 0.9),
+            rgba(27, 18, 42, 0.95)
+        );
+
+    border-color: rgba(244, 108, 169, 0.42);
+
+    box-shadow:
+        inset 0 0 25px rgba(255, 75, 160, 0.08),
+        0 4px 20px rgba(255, 70, 150, 0.08);
+}
+
+
+.about-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 25px rgba(255, 80, 160, 0.15);
+}
+
+
+/* --------------------------------
+   ICONS
+-------------------------------- */
+
+.card-icon {
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 7px;
+
+    font-size: 52px;
+
+    line-height: 1;
+
+    color: #ff83b4;
+
+    text-shadow:
+        0 0 5px #ffb1d0,
+        0 0 15px rgba(255, 80, 160, 0.7),
+        0 0 25px rgba(255, 80, 160, 0.35);
+}
+
+
+.card-icon.moon {
+    font-family: Georgia, serif;
+
+    font-size: 62px;
+
+    color: #f7c9dc;
+
+    text-shadow:
+        0 0 8px rgba(255, 200, 220, 0.6);
+}
+
+
+.card-icon.heart {
+    font-family: Arial, sans-serif;
+
+    font-size: 54px;
+
+    color: #ff7cac;
+
+    animation: soft-heart 1.8s ease-in-out infinite;
+}
+
+
+.card-icon.book {
+    font-family: Georgia, serif;
+
+    font-size: 55px;
+
+    color: #ff9bc4;
+}
+
+
+@keyframes soft-heart {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+}
+
+
+/* --------------------------------
+   CARD TEXT
+-------------------------------- */
+
+.about-card p {
+    margin: 0;
+
+    font-size: 17px;
+
+    line-height: 1.18;
+
+    font-weight: 500;
+
+    color: #f1dfe9;
+
+    text-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.about-page {
+    position: relative;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding-bottom: 70px;
+}
+
